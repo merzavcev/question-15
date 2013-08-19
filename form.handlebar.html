@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма-анкета с заданиями для кандидатов</title>
+	<link rel="stylesheet" href="base.css">
+	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script> -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="handlebars.js"></script>
+	<script id="questions-template" type="text/x-handlebars-template">
+		{{#data}}
+		<li>
+			<a class="num" href="#">{{num}}</a>
+			<div class="content">
+				<div class="question">
+					{{{question}}}
+				</div>
+				<div class="answer">
+				  {{#if answer}}
+					{{{answer}}}
+				  {{/if}}				
+				</div>
+				<div class="control">
+				  {{#if control}}
+					{{{control}}}
+				  {{else}}
+					<a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a>
+				  {{/if}}				
+				</div>
+			</div>
+		</li>
+		{{/data}}
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<section>
+	<h1>Анкета второй Школы разработки интерфейсов в Москве</h1>
+	<form id="shri-form" action="" onsubmit="checkForm();">
+	<ul class="questions">
+
+	</ul>
+	<div class="progress">
+		<div class="progress-wrapper">
+			<div id="current-state"></div>
+		</div>
+	</div>
+	<div class="submit">
+		<button id="submit" type="submit" class="button blue">Отправить</button> <button id="reset" type="reset" class="button">Очистить</button>
+	</div>
+	</form>
+	</section>
+</div>
+</body>
+</html>

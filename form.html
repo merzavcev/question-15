@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма-анкета с заданиями для кандидатов</title>
+	<link rel="stylesheet" href="base.css">
+	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script> -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<section>
+	<h1>Анкета второй Школы разработки интерфейсов в Москве</h1>
+	<form id="shri-form" action="" onsubmit="checkForm();">
+	<ul class="questions">
+		<li>
+			<a class="num" href="#">1</a>
+			<div class="content">
+				<div class="question"><p>Год рождения.</p></div>
+				<div class="answer"><input type="text" name="q1_1" id="q1_1"></div>
+				<div class="control"><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">2</a>
+			<div class="content">
+				<div class="question"><p>Город, в котором вы живёте.</p></div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_2" id="q1_2"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">3</a>
+			<div class="content">
+				<div class="question">
+					<p>Вуз, факультет, специальность, кафедра.</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_3" id="q1_3"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">4</a>
+			<div class="content">
+				<div class="question">
+					<p>Год окончания вуза.</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_4" id="q1_4"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">5</a>
+			<div class="content">
+				<div class="question">
+					<p>Уровень владения английским языком:</p>
+				</div>
+				<div class="answer">
+				<label><input type="radio" name="q1_5_1" value="1" /> начальный;</label><br>
+				<label><input type="radio" name="q1_5_1" value="2" /> средний;</label><br>
+				<label><input type="radio" name="q1_5_1" value="3" /> свободное владение.</label><br><br>
+				<textarea rows="4" cols="80" name="q1_5" id="q1_5"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">6</a>
+			<div class="content">
+				<div class="question">
+					<p>Чего вы ожидаете от участия в Школе?</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_6" id="q1_6"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">7</a>
+			<div class="content">
+				<div class="question">
+					<p>Откуда вы о нас узнали?</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_7" id="q1_7"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">8</a>
+			<div class="content">
+				<div class="question">
+					<p>Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_8" id="q1_8"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">9</a>
+			<div class="content">
+				<div class="question">
+					<p>Расскажите о вашем опыте разработки. Нам будет интересно всё — как серьезный интерфейс, так и просто домашняя страничка.</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_9" id="q1_9"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">10</a>
+			<div class="content">
+				<div class="question">
+					<p>Если вы где-нибудь работали, расскажите, какие у вас были должностные обязанности и был ли опыт работы в команде.</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_10" id="q1_10"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">11</a>
+			<div class="content">
+				<div class="question">
+					<p>Перечислите, какими программными продуктами вы пользуетесь в своей работе — от редактора до специализированных утилит (Intellij Idea, Node.js, Uglify.js, GNU Make). Для каждого инструмента укажите, какие задачи вы с помощью него решаете и почему выбрали именно его.</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_11" id="q1_11"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">12</a>
+			<div class="content">
+				<div class="question">
+					<p>Пользуетесь ли вы командной строкой? Какими командами вы пользуетесь и какие задачи вы решаете с их помощью? С какими программами вы преимущественно или полностью взаимодействуете через интерфейс командной строки?</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_12" id="q1_12"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">13</a>
+			<div class="content">
+				<div class="question">
+					<p>Напишите на JavaScript функцию, которая выводит список всех чисел, которые равны сумме факториалов своих цифр. Пример такого числа:</p>
+					<p>4! + 0! + 5! + 8! + 5! = 40585</p>
+					<p>В качестве ответа на вопрос пришлите ссылку на <a href="http://jsfiddle.net/" target="_blank">http://jsfiddle.net/</a> с вашим кодом или на ваш репозиторий на <a href="https://github.com/" target="_blank">https://github.com/</a>.</p>		
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_13" id="q1_13"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">14</a>
+			<div class="content">
+				<div class="question">
+					<p>Вы — пилот грузового межгалактического корабля. Ваша работа — перевозка грузов с одной планету на другую. Грузоподъемность вашего корабля ограничена, поэтому за один рейс вы можете перевезти не более N кг полезного груза. Ваш корабль умеет сообщать свое состояние (местоположение и степень загруженности), а также летать в любую точку пространства. Каждая планета может содержать на себе груз, который можно взять. Также на каждой планете груз можно оставить.</p>
+					<p>Задание.</p>
+					<p>Даны незавершенные интерфейсы корабля и планеты. Напишите недостающий код.</p>
+					<p>Полное условие задачи доступно на <a href="https://github.com/yandex-shri/introtask-space" target="_blank">https://github.com/yandex-shri/introtask-space</a>.</p>
+					<p>В качестве ответа на вопрос пришлите ссылку на <a href="http://jsfiddle.net/" target="_blank">http://jsfiddle.net/</a> с вашим кодом или на ваш репозиторий на <a href="https://github.com/" target="_blank">https://github.com/</a>.</p>
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_14" id="q1_14"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a><a href="#" title="К следующему вопросу" class="next">></a></div>
+			</div>
+		</li>
+		<li>
+			<a class="num" href="#">15</a>
+			<div class="content">
+				<div class="question">
+					<p>Сверстайте форму-анкету с нашими заданиями для кандидатов.</p>
+					<p>Страница должна работать в следующих браузерах: MSIE (8, 9, 10), Google Chrome (26, 27), Firefox (20, 21), Opera (12.15, 12.14), Яндекс.Браузер 1.5. По возможности используйте приёмы безопасной деградации CSS. Страница должна содержать интерактив, реализованный с помощью JS и jQuery. Это может быть:</p>
+					<ul>
+					<li>проверка полноты и правильности заполнения полей (где это возможно);</li>
+					<li>возможность свернуть и развернуть разделы (аккордеон);</li>
+					<li>индикатор заполнения анкеты;</li>
+					<li>что-нибудь ещё.</li>
+					</ul>
+					<p>Подумайте над тем, как эти данные будут отправляться на сервер.</p>
+					<p>Будет плюсом, если вы сверстаете страницу, используя БЭМ.</p>
+					<p>Дополнительные задания</p>
+					<ol>
+						<li>Выполните задание про форму-анкету, используя один из классических шаблонизаторов: Handlebars, mustache, Dust, Jade и т.п.</li>
+						<li>Выполните задание про форму-анкету, используя один из экзотических шаблонизаторов: XSLT, YATE, BEMHTML и т.п.</li>
+					</ol>
+					<p>Разработку необходимо вести на <a href="https://github.com/" target="_blank">https://github.com/</a>. В качестве ответа на вопрос пришлите ссылку на проект.</p>	
+				</div>
+				<div class="answer"><textarea rows="4" cols="80" name="q1_15" id="q1_15"></textarea></div>
+				<div class="control"><a href="#" title="К предыдущему вопросу" class="back"><</a></div>
+			</div>
+		</li>
+	</ul>
+	<div class="progress">
+		<div class="progress-wrapper">
+			<div id="current-state"></div>
+		</div>
+	</div>
+	<div class="submit">
+		<button id="submit" type="submit" class="button blue">Отправить</button> <button id="reset" type="reset" class="button">Очистить</button>
+	</div>
+	</form>
+	</section>
+</div>
+</body>
+</html>
